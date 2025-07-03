@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YT Converter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container mt-5">
+    <div class="text-center mb-4">
+      <h2>🎧 YouTube Converter</h2>
+      <p class="text-muted">Chuyển đổi video YouTube sang MP3 hoặc MP4 miễn phí, không quảng cáo</p>
+    </div>
+
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <form>
+          <div class="mb-3">
+            <label for="yt-url" class="form-label">🔗 Link video YouTube</label>
+            <input type="url" class="form-control" id="yt-url" placeholder="https://www.youtube.com/watch?v=...">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">🎞️ Chọn định dạng</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="format" id="mp3" value="mp3" checked>
+                <label class="form-check-label" for="mp3">MP3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="format" id="mp4" value="mp4">
+                <label class="form-check-label" for="mp4">MP4</label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-danger w-100">⬇️ Chuyển đổi ngay</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
